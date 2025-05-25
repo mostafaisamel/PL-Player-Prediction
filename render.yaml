@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: football-predict-api
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: "pip install -r FastAPI_app/requirements.txt"
+    startCommand: "uvicorn FastAPI_app.main:app --host 0.0.0.0 --port 10000"
+    envVars: []
