@@ -8,10 +8,10 @@ import traceback
 
 # Load all models
 models = {
-    ("classification", "goals"): joblib.load("goals_classification_model_XGB.pkl"),
-    ("regression", "goals"): joblib.load("goals_regression_model_XGB.pkl"),
-    ("classification", "assists"): joblib.load("random_forest_assists_clf.pkl"),
-    ("regression", "assists"): joblib.load("random_forest_assists_reg.pkl")
+    ("classification", "goals"): joblib.load("FastAPI_app/goals_classification_model_XGB.pkl"),
+    ("regression", "goals"): joblib.load("FastAPI_app/goals_regression_model_XGB.pkl"),
+    ("classification", "assists"): joblib.load("FastAPI_app/random_forest_assists_clf.pkl"),
+    ("regression", "assists"): joblib.load("FastAPI_app/random_forest_assists_reg.pkl")
 }
 
 # Updated list of 34 numeric features used by the models (excluding targets)
